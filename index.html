@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Optimizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Optimizer</h1>
+    </header>
+
+    <main>
+        <section class="planner">
+            <h2>Plan Your Route</h2>
+            <form id="travelForm">
+                <label for="locations">Enter Start Location:</label>
+                <input type="text" id="locations" placeholder="E.g., New York, Boston, Chicago" required>
+                <label for="locations">Enter End Location:</label>
+                <input type="text" id="locations" placeholder="E.g., New York, Boston, Chicago" required>
+
+                <button type="button" id="dijkstraButton">Run Dijkstra's Algorithm</button>
+                <button type="button" id="tspButton">Run Traveling Salesman Problem (TSP)</button>
+                <button type="button" id="compareButton">Compare Algorithms</button>
+                <button type="button" id="optimizeButton">Optimize Path</button>
+            </form>
+
+            <div id="result">
+                <h3>Optimal Route:</h3>
+                <p id="optimalRoute">Your optimized route will be displayed here.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Travel Optimizer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
